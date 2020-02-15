@@ -1,0 +1,90 @@
+<div class="my-container">
+    <ng-template #customLoadingTemplate>
+        <div class="custom-class">
+            <h3>
+                Loading...
+            </h3>
+            
+        </div>
+    </ng-template>
+ 
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+</div>
+
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6" *ngFor="let movie of movieList">
+            <mat-card class="example-card">
+                <mat-card-header>
+                
+                </mat-card-header>
+                <div class="row" style="height: 50px">
+                <img src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Photo of a Shiba Inu">
+                </div>
+                <mat-card-content>
+                  <p>
+                    The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                    A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                    bred for hunting.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions>
+                  <button mat-button>LIKE</button>
+                  <button mat-button>SHARE</button>
+                </mat-card-actions>
+              </mat-card>
+        </div>
+        </div>
+
+ </div> 
+
+
+  -->
+
+  <!-- <app-loader></app-loader> -->
+
+  <div class="container-fluid">
+    
+    <h3 class="mt-3 pb-3 mb-4 font-italic border-bottom">
+Top rated Movies 
+   </h3>
+    <div class="row" >
+       <div class="col-md-4" *ngFor="let movie of movieList" (click)="navigateToTopRatedMovieDetail(movie.id)">
+          <div class="card box" style="background-color: white;">
+            <div class="row">
+
+                <div class="col-sm-6">
+                    <img class="card-img-top" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}" alt="Card image cap">
+
+                </div>
+
+                <div class="col-sm-6">
+                    <h4>{{movie.original_title}}</h4>
+                <p>Popularity: {{movie.popularity}}</p>
+                <p>Vote Count:{{movie.vote_count}}</p>
+                <p>Release Date: {{movie.release_date}}</p>
+               <span class="fa fa-star checked">Rating:  {{movie.vote_average}}</span>
+           
+
+  
+
+             
+                </div>
+            </div>
+             
+
+             <!-- <div class="card-body">
+                <h5 class="card-title border-bottom pb-3">Card title <a href="#" class="float-right d-inline-flex share"><i class="fas fa-share-alt text-primary"></i></a></h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+             </div> -->
+          </div>
+       </div>
+ 
+    </div>
+    <hr>
+
+ </div>
+
+
+ 
