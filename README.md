@@ -4,6 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <a href="https://imgflip.com/gif/3paiwi"><img src="https://i.imgflip.com/3paiwi.gif" title="made at imgflip.com"/></a>
 
+<a href="https://imgflip.com/gif/3paj6p"><img src="https://i.imgflip.com/3paj6p.gif" title="made at imgflip.com"/></a>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
